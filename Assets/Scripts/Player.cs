@@ -63,7 +63,7 @@ public class Player {
 
     public string HandToString() {
         var sb = new StringBuilder();
-        sb.Append(string.Format("{0} ${1}:\n", playerId, score));
+        sb.AppendLine(string.Format("{0} ${1}", playerId, score));
 
         foreach (var visible in currentHand.visibleCards) {
             sb.Append("[");
